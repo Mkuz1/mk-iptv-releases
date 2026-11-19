@@ -5,29 +5,43 @@ main{max-width:760px;margin:0 auto;padding:40px 20px 80px}h1{font-size:2rem;line
 a{color:#7CC4FF}header{display:flex;align-items:center;gap:14px}header img{width:56px;height:56px;border-radius:14px}</style></head>
 <body><main><header><img src="icon.png" alt=""><strong>MK IPTV</strong></header>
 <h1>MK IPTV – Privacy Policy</h1>
-<p><em>Last updated: 10 November 2026</em></p>
-<p>MK IPTV is a video player for IPTV services that use the Xtream Codes API. It does not provide any TV channels, movies or series. You connect it to a service you already subscribe to.</p>
-<h2>What the app stores, and where</h2>
-<p>Everything stays <strong>on your device</strong>:</p>
+<p><em>Last updated: 19 November 2026</em></p>
+<p>MK IPTV is a video player for IPTV services that use the Xtream Codes API, for Android phones, tablets, Google TV and iPhone/iPad. It does not provide any TV channels, movies or series. You connect it to a service you already subscribe to.</p>
+<h2>What the app stores on your device</h2>
 <ul>
-<li><strong>Playlist details you enter</strong>: server address, username and password. The password is encrypted with a key held in the Android Keystore.</li>
+<li><strong>Playlist details you enter</strong>: server address, username and password. On Android the password is encrypted with a key held in the Android Keystore; on iPhone it is kept in the Keychain.</li>
 <li><strong>Profiles, favourites, watch progress and settings.</strong></li>
-<li><strong>A cached copy of your provider&#x27;s channel/movie/series list</strong>, so the app opens quickly.</li>
-<li><strong>Downloaded videos</strong>, in the app&#x27;s private storage.</li>
+<li><strong>A cached copy of your provider's channel/movie/series list</strong>, so the app opens quickly.</li>
+<li><strong>Downloaded videos</strong>, in the app's private storage.</li>
 </ul>
 <p>This data is excluded from Android cloud backup and device-to-device transfer.</p>
 <h2>What is sent over the network</h2>
 <ul>
-<li><strong>To the IPTV provider you configured</strong>: your username and password, plus requests for channel lists, programme guides, artwork and video streams. This is required for the app to work. That provider&#x27;s own privacy policy applies to it.</li>
+<li><strong>To the IPTV provider you configured</strong>: your username and password, plus requests for channel lists, programme guides, artwork and video streams. This is required for the app to work. That provider's own privacy policy applies to it.</li>
 <li><strong>When you cast (Google Cast) or use AirPlay</strong>: the stream address of what you are watching is sent to the TV or device you choose on your network.</li>
+<li><strong>Only if you turn on account sync</strong>: the data described in the next section.</li>
 </ul>
+<h2>Account sync (optional)</h2>
+<p>Sync is off until you choose <strong>Sign in with Google</strong>, <strong>Sign in with Apple</strong>, or <strong>link devices with a code</strong>. If you never do, nothing in this section applies.</p>
+<p>When sync is on, the app stores a copy of the following in Google Firebase (Cloud Firestore and Firebase Authentication), in a cloud project operated by the developer:</p>
+<ul>
+<li><strong>Your sync account</strong>: a Firebase user ID and, if you sign in with Google or Apple, the email address those services provide (Apple may give a private relay address).</li>
+<li><strong>Your playlists</strong>: name, server address, username and password, and playlist options.</li>
+<li><strong>Profiles, favourites, watch progress</strong> (titles, artwork links and positions), dismissed items and app settings.</li>
+<li><strong>The device model</strong> of each linked device (for example "Google Pixel 8"), so you can see which devices are linked.</li>
+</ul>
+<p>This data is used only to keep your library the same on your own devices. It is not sold, not shared with third parties, not used for advertising or analytics, and not combined with other data. It is encrypted in transit and at rest by Google, and Firestore security rules allow only the devices you have linked to your account to read or change it. Google acts as the developer's data processor (<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>).</p>
 <h2>What we (the developer) receive</h2>
-<p><strong>Nothing.</strong> MK IPTV has no developer server, no account system, no analytics, no advertising and no tracking. We never receive your playlist credentials, viewing history or any personal data.</p>
+<p>Without sync: <strong>nothing</strong>. MK IPTV has no analytics, no advertising and no tracking.</p>
+<p>With sync on: the data listed above is held in the developer's Firebase project only to provide sync. We do not look at it or use it for any other purpose.</p>
 <p>If the app crashes, it can offer to let you <strong>share an error report</strong>. It is only sent if you choose to share it, through the app you pick, and passwords and stream addresses are removed from it first.</p>
 <h2>Children</h2>
-<p>MK IPTV is not directed at children. Kids profiles can hide adult categories, but the content shown comes from your own IPTV provider.</p>
+<p>MK IPTV is not directed at children, and the content shown comes from your own IPTV provider.</p>
 <h2>Deleting your data</h2>
-<p>Remove a playlist or profile in the app&#x27;s Settings, or uninstall the app, to delete all data it stored on your device.</p>
+<ul>
+<li><strong>On your device</strong>: remove a playlist or profile in Settings, or uninstall the app.</li>
+<li><strong>Synced data</strong>: in the app's Sync settings, choose <strong>Delete synced data</strong>. This deletes the cloud copy for all linked devices and your sync account. Data on the device itself stays until you remove it. You can also email us to ask for deletion.</li>
+</ul>
 <h2>Contact</h2>
 <p>Questions about this policy or the app: email <strong><a href="mailto:mohamad@koussa.org">mohamad@koussa.org</a></strong></p>
 </main></body></html>
