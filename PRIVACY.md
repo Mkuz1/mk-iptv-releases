@@ -26,9 +26,9 @@ Sync is off until you choose **Sign in with Google**, **Sign in with Apple**, or
 When sync is on, the app stores a copy of the following in Google Firebase (Cloud Firestore and Firebase Authentication), in a cloud project operated by the developer:
 
 - **Your sync account**: a Firebase user ID and, if you sign in with Google or Apple, the email address those services provide (Apple may give a private relay address).
-- **Your playlists**: name, server address, username and password, and playlist options.
+- **Your playlists**: name, server address, username and playlist options. The password is end-to-end encrypted on your device before upload (with a key that only your linked devices hold), so neither Google nor the developer can read it.
 - **Profiles, favourites, watch progress** (titles, artwork links and positions), dismissed items and app settings.
-- **The device model** of each linked device (for example "Google Pixel 8"), so you can see which devices are linked.
+- **The device model** of each linked device (for example "Google Pixel 8") and a public encryption key for it, so you can see which devices are linked and they can share the encryption key.
 
 This data is used only to keep your library the same on your own devices. It is not sold, not shared with third parties, not used for advertising or analytics, and not combined with other data. It is encrypted in transit and at rest by Google, and Firestore security rules allow only the devices you have linked to your account to read or change it. Google acts as the developer's data processor ([Firebase privacy information](https://firebase.google.com/support/privacy)).
 
